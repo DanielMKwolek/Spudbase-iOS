@@ -15,8 +15,11 @@
 		F44723BD286E296700F49A3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44723BB286E296700F49A3E /* LaunchScreen.storyboard */; };
 		F44723C8286E2FAC00F49A3E /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44723C7286E2FAC00F49A3E /* AuthenticationServices.framework */; };
 		F44723CA2870F7FA00F49A3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44723C92870F7FA00F49A3E /* ProfileViewController.swift */; };
+		F44A4DC228748427008F3A98 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A4DC128748427008F3A98 /* MessageViewController.swift */; };
 		F459D39C2873ADC3003D92A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459D39B2873ADC3003D92A6 /* User.swift */; };
 		F459D39E2873E1A7003D92A6 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459D39D2873E1A7003D92A6 /* NetworkHandler.swift */; };
+		F459D3A02873EDBA003D92A6 /* SessionData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F459D39F2873EDBA003D92A6 /* SessionData.plist */; };
+		F459D3A22874806E003D92A6 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459D3A12874806E003D92A6 /* MessagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +33,11 @@
 		F44723BE286E296700F49A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44723C7286E2FAC00F49A3E /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		F44723C92870F7FA00F49A3E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F44A4DC128748427008F3A98 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		F459D39B2873ADC3003D92A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F459D39D2873E1A7003D92A6 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		F459D39F2873EDBA003D92A6 /* SessionData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SessionData.plist; sourceTree = "<group>"; };
+		F459D3A12874806E003D92A6 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 				F44723B9286E296700F49A3E /* Assets.xcassets */,
 				F44723BB286E296700F49A3E /* LaunchScreen.storyboard */,
 				F44723BE286E296700F49A3E /* Info.plist */,
+				F459D39F2873EDBA003D92A6 /* SessionData.plist */,
 				F459D39B2873ADC3003D92A6 /* User.swift */,
 				F459D39D2873E1A7003D92A6 /* NetworkHandler.swift */,
 			);
@@ -91,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				F44723B4286E296500F49A3E /* LoginViewController.swift */,
+				F44A4DC128748427008F3A98 /* MessageViewController.swift */,
+				F459D3A12874806E003D92A6 /* MessagesViewController.swift */,
 				F44723C92870F7FA00F49A3E /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
@@ -155,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44723BD286E296700F49A3E /* LaunchScreen.storyboard in Resources */,
+				F459D3A02873EDBA003D92A6 /* SessionData.plist in Resources */,
 				F44723BA286E296700F49A3E /* Assets.xcassets in Resources */,
 				F44723B8286E296500F49A3E /* Main.storyboard in Resources */,
 			);
@@ -168,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F459D39C2873ADC3003D92A6 /* User.swift in Sources */,
+				F459D3A22874806E003D92A6 /* MessagesViewController.swift in Sources */,
+				F44A4DC228748427008F3A98 /* MessageViewController.swift in Sources */,
 				F44723B5286E296500F49A3E /* LoginViewController.swift in Sources */,
 				F44723B1286E296500F49A3E /* AppDelegate.swift in Sources */,
 				F44723CA2870F7FA00F49A3E /* ProfileViewController.swift in Sources */,

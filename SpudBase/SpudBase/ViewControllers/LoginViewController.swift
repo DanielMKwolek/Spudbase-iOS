@@ -9,22 +9,21 @@ import UIKit
 import AuthenticationServices
 
 class LoginViewController: UIViewController {
+    var sessionData: SessionData?
     
     @IBAction func onLoginTap(_ sender: Any) {
-        runLogin()
+        performSegue(withIdentifier: "loginToProfile", sender: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        guard let user = NSKeyedUnarchiver.value(forKey: "userInfo") as? User else {
-            runLogin()
-            return
-        }
-        print(user)
+        guard let sessionDataURL = Bundle.main.url(forResource: "SessionData", withExtension: "plist") else { return }
+        sessionData = SessionData(withPlistAt: sessionDataURL)
     }
     
     func runLogin() {
+        NetworkHandler.handleLogin(presContextProvider: self)
     }
 }
 

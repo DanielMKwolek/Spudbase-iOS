@@ -8,27 +8,27 @@
 import UIKit
 import AuthenticationServices
 
-class NetworkHandler: NSObject {
+class NetworkHandler {
     
-    let APP_CALLBACK_SCHEME = "spudbase"
+    private static let APP_CALLBACK_SCHEME = "spudbase"
     
-    let SPUDBASE_SCHEME = "https"
-    let SPUDBASE_HOST = "shielded-badlands-00728.herokuapp.com"
-    let SPUDBASE_OAUTH_PATH = "/oauth/authorizemobile"
+    private static let SPUDBASE_SCHEME = "https"
+    private static let SPUDBASE_HOST = "shielded-badlands-00728.herokuapp.com"
+    private static let SPUDBASE_OAUTH_PATH = "/oauth/authorizemobile"
     
-    let GITHUB_SCHEME = "https"
-    let GITHUB_HOST = "github.com"
-    let GITHUB_OAUTH_PATH = "/login/oauth/authorize"
-    let GITHUB_CLIENTID_KEY = "client_id"
-    let GITHUB_CLIENTID_VALUE = "f287e04ce5fa9553455f"
-    let GITHUB_STATE_KEY = "state"
-    let GITHUB_STATE_VALUE = UUID().uuidString
+    private static let GITHUB_SCHEME = "https"
+    private static let GITHUB_HOST = "github.com"
+    private static let GITHUB_OAUTH_PATH = "/login/oauth/authorize"
+    private static let GITHUB_CLIENTID_KEY = "client_id"
+    private static let GITHUB_CLIENTID_VALUE = "f287e04ce5fa9553455f"
+    private static let GITHUB_STATE_KEY = "state"
+    private static let GITHUB_STATE_VALUE = UUID().uuidString
     
-    func sessionIsValid(sessionID: String) -> Bool {
+    public static func sessionIsValid(sessionID: String) -> Bool {
         return false
     }
     
-    func handleLogin(presContextProvider: ASWebAuthenticationPresentationContextProviding) {
+    public static func handleLogin(presContextProvider: ASWebAuthenticationPresentationContextProviding) {
         var newComp = URLComponents()
         newComp.scheme = GITHUB_SCHEME
         newComp.host = GITHUB_HOST

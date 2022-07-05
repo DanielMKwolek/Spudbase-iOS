@@ -1,28 +1,24 @@
 //
-//  ProfileViewController.swift
+//  MessagesViewController.swift
 //  SpudBase
 //
-//  Created by Daniel Kwolek on 7/2/22.
+//  Created by Daniel Kwolek on 7/5/22.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class MessagesViewController: UIViewController {
+
+    @IBAction func exitView(_ sender: Any) { self.dismiss(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func dismissViewController(_ sender: Any) {
-        self.dismiss(animated: true)
-    }
-    
-    @IBAction func seeGithub(_ sender: Any) {
-        if let url = URL(string: "https://www.github.com/danielmkwolek") {
-            UIApplication.shared.open(url)
-        }
-    }
+
     /*
     // MARK: - Navigation
 
