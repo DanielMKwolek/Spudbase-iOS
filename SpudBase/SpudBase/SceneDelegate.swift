@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SpudBase
 //
-//  Created by Gabrielle Walsh on 6/30/22.
+//  Created by Daniel Kwolek on 6/30/22.
 //
 
 import UIKit

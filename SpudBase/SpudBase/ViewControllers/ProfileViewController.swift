@@ -2,27 +2,15 @@
 //  ProfileViewController.swift
 //  SpudBase
 //
-//  Created by Gabrielle Walsh on 7/2/22.
+//  Created by Daniel Kwolek on 7/2/22.
 //
 
 import UIKit
 
 class ProfileViewController: UIViewController {
     
-    var tapCount: Int = 0
-    
-    @IBOutlet weak var counterTextField: UITextField!
-
-    @IBOutlet weak var tapMeButton: UIButton!
-    @IBAction func onTap(_ sender: Any) {
-        tapCount += 1
-        counterTextField.text = String(tapCount)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        counterTextField.text = String(tapCount)
         // Do any additional setup after loading the view.
     }
     

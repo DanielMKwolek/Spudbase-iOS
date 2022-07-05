@@ -15,6 +15,8 @@
 		F44723BD286E296700F49A3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44723BB286E296700F49A3E /* LaunchScreen.storyboard */; };
 		F44723C8286E2FAC00F49A3E /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44723C7286E2FAC00F49A3E /* AuthenticationServices.framework */; };
 		F44723CA2870F7FA00F49A3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44723C92870F7FA00F49A3E /* ProfileViewController.swift */; };
+		F459D39C2873ADC3003D92A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459D39B2873ADC3003D92A6 /* User.swift */; };
+		F459D39E2873E1A7003D92A6 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459D39D2873E1A7003D92A6 /* NetworkHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F44723BE286E296700F49A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44723C7286E2FAC00F49A3E /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		F44723C92870F7FA00F49A3E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F459D39B2873ADC3003D92A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F459D39D2873E1A7003D92A6 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +66,15 @@
 		F44723AF286E296500F49A3E /* SpudBase */ = {
 			isa = PBXGroup;
 			children = (
+				F459D39A28736B33003D92A6 /* ViewControllers */,
 				F44723B0286E296500F49A3E /* AppDelegate.swift */,
 				F44723B2286E296500F49A3E /* SceneDelegate.swift */,
-				F44723B4286E296500F49A3E /* LoginViewController.swift */,
-				F44723C92870F7FA00F49A3E /* ProfileViewController.swift */,
 				F44723B6286E296500F49A3E /* Main.storyboard */,
 				F44723B9286E296700F49A3E /* Assets.xcassets */,
 				F44723BB286E296700F49A3E /* LaunchScreen.storyboard */,
 				F44723BE286E296700F49A3E /* Info.plist */,
+				F459D39B2873ADC3003D92A6 /* User.swift */,
+				F459D39D2873E1A7003D92A6 /* NetworkHandler.swift */,
 			);
 			path = SpudBase;
 			sourceTree = "<group>";
@@ -80,6 +85,15 @@
 				F44723C7286E2FAC00F49A3E /* AuthenticationServices.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F459D39A28736B33003D92A6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F44723B4286E296500F49A3E /* LoginViewController.swift */,
+				F44723C92870F7FA00F49A3E /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F459D39C2873ADC3003D92A6 /* User.swift in Sources */,
 				F44723B5286E296500F49A3E /* LoginViewController.swift in Sources */,
 				F44723B1286E296500F49A3E /* AppDelegate.swift in Sources */,
 				F44723CA2870F7FA00F49A3E /* ProfileViewController.swift in Sources */,
 				F44723B3286E296500F49A3E /* SceneDelegate.swift in Sources */,
+				F459D39E2873E1A7003D92A6 /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
